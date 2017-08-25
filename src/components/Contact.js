@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export class GoPlay extends Component {
+export class Contact extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>GoPlay</Text>
+                <Text>Contact</Text>
             </View>
         );
     }
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#FBE27F'
+        backgroundColor: '#CAE3FC'
     }
 });
 
