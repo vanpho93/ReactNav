@@ -5,13 +5,14 @@ const peopleName = ['Pho', 'Khoa', 'An', 'Truong', 'Dat'];
 
 export default class ListComponent extends Component {
     render() {
+        const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
                 <FlatList 
                     data={peopleName}
                     keyExtractor={(item) => item}
                     renderItem={({ item }) => (
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigate('SayHello')}>
                             <Text>{item}</Text>
                         </TouchableOpacity>
                     )}
