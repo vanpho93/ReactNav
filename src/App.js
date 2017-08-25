@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { Home } from './components/Home';
-import { Contact } from './components/Contact';
-import { TabNavigator } from 'react-navigation';
+import { Menu } from './components/Menu';
 
 export class App extends Component {
     render() {
-        return <Contact />;
+        return <Home />;
     }
 }

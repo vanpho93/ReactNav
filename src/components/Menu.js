@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export class Contact extends Component {
+export class Menu extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Contact</Text>
+                <Text>Menu</Text>
             </View>
         );
     }
