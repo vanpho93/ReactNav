@@ -12,7 +12,7 @@ export default class ListComponent extends Component {
                     data={peopleName}
                     keyExtractor={(item) => item}
                     renderItem={({ item }) => (
-                        <TouchableOpacity onPress={() => navigate('SayHello')}>
+                        <TouchableOpacity onPress={() => navigate('SayHello', { name: item })}>
                             <Text>{item}</Text>
                         </TouchableOpacity>
                     )}

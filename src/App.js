@@ -6,7 +6,7 @@ import { SayHello } from './components/SayHello';
 
 const StackComponent = StackNavigator({
     ListPeople: { screen: ListPeople },
-    SayHello: { screen: SayHello }
+    SayHello: { screen: SayHello, path: 'sayhello/:name' }
 }, { headerMode: 'none' });
 
 export class App extends Component {
